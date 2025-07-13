@@ -1,2 +1,4 @@
 Flask
 deepgram-sdk==3.3.3
+pywebview
+pyinstaller

@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    margin: 2em;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 2em;
+}
+
+#results {
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1em;
+}

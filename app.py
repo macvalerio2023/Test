@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from deepgram import DeepgramClient, PrerecordedOptions
 import os
+import webview
 
 app = Flask(__name__, static_url_path='/static', static_folder='static')
 app.config['UPLOAD_FOLDER'] = 'uploads'
@@ -58,4 +59,5 @@ def transcribe():
         return render_template('index.html', transcription=transcription)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    webview.create_window('MP3 Transcription', app)
+    webview.start()
