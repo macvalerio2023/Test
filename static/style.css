@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+    margin: 2em;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 2em;
+}
+
+#transcription {
+    border: 1px solid #ccc;
+    padding: 1em;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcription</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Upload an MP3 file to transcribe</h1>
+    <form action="/transcribe" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".mp3" required>
+        <br><br>
+        <label>
+            <input type="checkbox" name="diarize"> Enable Speaker Diarization
+        </label>
+        <br><br>
+        <button type="submit">Transcribe</button>
+    </form>
+    <div id="transcription">
+        <h2>Transcription:</h2>
+        <p>{{ transcription }}</p>
+    </div>
+</body>
+</html>
